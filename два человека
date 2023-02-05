@@ -1,0 +1,41 @@
+a = float(input('Выберите данные: '))
+
+dict = {'data1': '|Michael B. Jordan|', 'data2': '|Voldemort|'}
+
+man = {
+
+    'Рост': '45см',
+    'Вес': '324кг',
+
+}
+
+man2 = {
+
+    'Рост': '200см',
+    'Вес': '75кг',
+
+
+}
+
+while True:
+
+    if a == 1:
+        print(dict['data1'])
+        print('Рост: ', man['Рост'])
+        print('Вес: ', man['Вес'])
+
+    if a == 2:
+        print(dict['data2'])
+        print('Рост: ', man2['Рост'])
+        print('Вес: ', man2['Вес'])
+
+    elif a > 2:
+        if a > 2:
+            print('Are you serious?')
+
+    again = input('other?: ')
+
+    if again == 'no':
+        break
+
+
