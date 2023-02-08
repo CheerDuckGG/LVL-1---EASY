@@ -1,0 +1,36 @@
+def apply(a, b, sign):
+    if sign == '+':
+      return a + b
+    elif sign == '-':
+      return a - b
+    elif sign == '*':
+      return a * b
+    elif sign == '**':
+      return a ** b
+    elif sign == '/':
+      return a / b
+
+def get_first_val():
+  return int(input('Enter the first value: '))
+
+def get_second_val():
+  return int(input('Enter the second value: '))
+
+def get_sign():
+  return input('What the action?: ')
+
+first_result = apply(
+  get_first_val(),
+  get_second_val(),
+  get_sign())
+
+second_result = apply(
+  get_first_val(),
+  get_second_val(),
+  get_sign())
+
+print('Saved:', first_result, 'and', second_result)
+sign = get_sign()
+
+next_result = apply(first_result, second_result, sign)
+print(next_result)
