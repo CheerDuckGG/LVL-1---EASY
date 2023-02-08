@@ -1,0 +1,25 @@
+import math
+
+aboba = 0
+
+while aboba != 'no':
+
+    a = float(input('Enter the first number: '))
+    b = float(input('Enter the second number: '))
+    what = input('what action?: ')
+
+    if what == '+':
+        print('Result: ' , a + b)
+    elif what == '-':
+        print('Result: ' , a - b)
+    elif what == '*':
+        print('Result: ' , a * b)
+    elif what == '**':
+        print('Result: ' , a ** b)
+    elif what == '/':
+        if b == 0:
+            print('ERROR')
+else:
+        print('Result: ', a / b)
+
+
